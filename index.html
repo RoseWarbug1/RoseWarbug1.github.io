@@ -1,8 +1,25 @@
 <html>
     <head>
         <title>whuh</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="site.js" defer></script>
     </head>
     <body>
-        <p>hi</p>
+        <p class="logo">AAA</p>
+        <div class="topnav">
+            <a class="active" id="homebutton" href="#home" onclick="changeClass('homebutton'); changePage(event, 'homebutton', 'home')">Home</a>
+            <a id="projectsbutton" href="#projects" onclick="changeClass('projectsbutton'); changePage(event, 'projectsbutton', 'projects')">Projects</a>
+        </div>
+        <hr>
+
+        <div id="home" class="content"> <!--Home-->
+            <p>Home page</p>
+        </div>
+
+        <div id="projects" class="content" hidden="true"> <!--Projects-->
+            <p>Projects Page</p>
+        </div>
+
     </body>
+
 </html>

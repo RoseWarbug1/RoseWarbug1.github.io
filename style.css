@@ -1,0 +1,71 @@
+
+:root {
+  --background: url(BackgroundLightMode.png);
+  --contentbg: #786fad;
+  --textcolor: #000000;
+}
+@media (prefers-color-scheme: dark) {
+        :root {
+          --contentbg: #000155;
+          --background: url(BackgroundDarkMode.png);
+          --textcolor: #fdf6f6;
+        }
+      }
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: fit-content;
+  margin: 0 auto;
+}
+
+body {
+  background-image: var(--background);
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #027d81;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #0feff7;
+  color: black;
+}
+
+.content {
+  width: fit-content;
+  margin: 0 auto;
+  display: block;
+  background-color: var(--contentbg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--textcolor);
+}
+
+.content[hidden] {
+  display: none;
+}
+
+.logo {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  font-size:xx-large;
+}
